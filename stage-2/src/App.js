@@ -44,7 +44,7 @@ class App extends Component {
           <Route path="/storefront" render={() => {
             return <StoreFront
               addToShoppingCart={this.addToShoppingCart} />
-          }} />
+          }} />)
           <Route path="/shoppingcart" render={() => {
             return <ShoppingCart
               shoppingCart={this.state.shoppingCart}
@@ -53,6 +53,7 @@ class App extends Component {
         </Switch>
       </div>
     );
+  
   }
 }
 
